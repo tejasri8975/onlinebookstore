@@ -1,0 +1,106 @@
+package PROJECT;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.*;
+public class frame3{
+	public static void main(String[]args) {
+	JFrame f=new JFrame("book store");
+    JLabel c1=new JLabel("author:Byrne Rhonda");
+    JLabel c2=new JLabel("prize:200/-"); 
+    JLabel d1=new JLabel("author:Bhinder Shravya");
+    JLabel d2=new JLabel("prize:400/-");
+    JLabel d11=new JLabel("author:Anthony Doerr");
+    JLabel d21=new JLabel("prize:370/-");
+    JLabel e1=new JLabel("author:J.K. Rowling");
+    JLabel e11=new JLabel("prize:600/-");
+    JLabel A=new JLabel("BOOK");
+    JLabel B=new JLabel("AUTHOUR");
+    JLabel B1=new JLabel("PRIZE");
+    A.setBounds(470,520,150,80);
+	    f.add(A);
+	    B.setBounds(660,520,150,80);
+	    f.add(B);
+	    B1.setBounds(800,520,150,80);
+	    f.add(B1);
+    c1.setBounds(100,430,150,80);
+	    f.add(c1);                   
+	    c2.setBounds(100,450,150,80);
+	    f.add(c2);
+	    d1.setBounds(390,430,150,80);
+	    f.add(d1);
+	    d2.setBounds(390,450,150,80);
+	    f.add(d2);
+	    d11.setBounds(690,430,150,80);
+	    f.add(d11);
+	    d21.setBounds(690,450,150,80);
+	    f.add(d21);
+	    e1.setBounds(1020,430,150,80);
+	    f.add(e1);
+	    e11.setBounds(1020,450,150,80);
+	    f.add(e11);
+	    
+      f.setSize(400,400);  
+	    f.setLayout(null);  
+	    f.setVisible(true);   
+	    JLabel background=new JLabel(new ImageIcon("C:\\Users\\sri\\Downloads\\9book.jpeg"));
+	    f.add(background);
+	    background.setBounds(05,30,80,80);
+	    background.setSize(400,400);
+	    JLabel background1=new JLabel(new ImageIcon("C:\\Users\\sri\\Downloads\\8book.jpeg"));
+	    f.add(background1);
+	    background1.setBounds(290,30,80,80);
+	    background1.setSize(400,400);
+	    JLabel background11=new JLabel(new ImageIcon("C:\\Users\\sri\\Downloads\\b1.jpg"));
+	    f.add(background11);
+	    background11.setBounds(590,30,80,80);
+	    background11.setSize(400,400);
+	    JLabel background111=new JLabel(new ImageIcon("C:\\Users\\sri\\Downloads\\7book.jpg"));
+	    f.add(background111);
+	    background111.setBounds(960,30,80,80);
+	    background111.setSize(400,400);
+      Choice c=new Choice();  
+      c.setBounds(400,600,190,30);    
+      c.add("THE MAGIC");  
+      c.add("SOMETHING I NEVER TOLD YOU");  
+      c.add("ALL THE NIGHT WE CANNOY SEE");
+      c.add(" HARRY POTTER"); 
+      f.add(c);  
+      f.setSize(400,400);  
+      f.setLayout(null);  
+      f.setVisible(true);  
+      f.setSize(900,900);  
+      f.setLayout(null);  
+      f.setVisible(true); 
+      Choice c11=new Choice();  
+      c11.setBounds(620,600,140,30);  
+      c11.add("Byrne Rhonda");  
+      c11.add("Bhinder Shravya");  
+      c11.add("Anthony Doerr"); 
+      c11.add("J.K. Rowling"); 
+      f.add(c11);  
+      f.setLayout(null);  
+      f.setVisible(true);  
+      f.setSize(400,400);
+      Choice c21=new Choice();  
+      c21.setBounds(780,600,140,30);  
+      c21.add("200/-");  
+      c21.add("400/-");  
+      c21.add("370/-"); 
+      c21.add("600/-");
+      f.add(c21);  
+      f.setLayout(null);  
+      f.setVisible(true);  
+      f.setSize(600,600);
+      JButton b=new JButton("Submit");    
+      b.setBounds(650,700,100,30);
+      f.add(b);
+f.setLayout(new BorderLayout());
+b.addActionListener(new ActionListener() {
+	public void actionPerformed(ActionEvent e) {
+		JOptionPane.showMessageDialog(b,"please enter your details");
+	}
+});
+}
+}
+
